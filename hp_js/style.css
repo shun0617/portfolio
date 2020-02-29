@@ -1,0 +1,497 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+#top-header {
+    background: rgba(0,0,0,1);
+    height: 70px;
+    line-height: 70px;
+}
+
+.header-logo {
+    color: white;
+    font-size: 20px;
+    margin-left: 35px;
+    font-weight: bold;
+    line-height: 70px;
+}
+
+.header-nav li { 
+    display: inline-block;
+    margin-right: 35px;
+    font-size: 16px;
+}
+
+.header-nav a {
+    color: blue;
+}
+
+#eyecatch {
+    height: 600px;
+    background: url(img/img-a.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+#eyecatch p {
+    position: absolute;            
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    font-style: italic;
+    font-weight: bold;
+    color: blue;
+    line-height: 1;
+}
+
+/*企業概要*/
+.wrap {
+    width: 80%;
+    margin: 0 auto 50px;
+}
+
+.wrap h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.about-left, .about-right {
+    width: 45%;
+
+}
+
+.about-right h3,.about-right p {
+    margin-bottom: 15px;
+}
+
+.about-right ol {
+    list-style-position: inside;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/*事業紹介*/
+#business {
+    background: url(img/img-d.jpg);
+    background-size: cover;
+}
+
+#business .section-title {
+    text-align: center;
+    padding: 40px 0;
+    color: white;
+    margin: 0;
+}
+
+.business-cat {
+    padding: 20px 35px 30px;
+    width: 28%;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+business-cat h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: white;
+    
+}
+
+.business-cat p {
+    color: white;
+}
+
+.business-cat img {
+    width: 100px;
+    height: auto;
+    margin: 0 auto 10px;
+}
+
+/*事業内容*/
+#company,.contain {
+    width: 70%;
+    margin: 0 auto;
+}
+#company {
+    border-top: 1px solid black;
+    padding: 40px 0 70px 0;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.mgb-50 h2 {
+    margin: 30px 0;
+    font-weight: bold;
+}
+
+#company th,#company td {
+    text-align: left;
+}
+
+#company th {
+    padding: 5px 0;
+}
+
+#company table tr {
+    border-bottom: 1px solid black;
+}
+
+/*お問い合わせ*/
+.contact {
+    width: 70%;
+    background-color: #cccccc;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contact h2 {
+    padding: 40px 0;
+}
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+form,div,input {
+    margin-bottom: 20px;
+    padding: 7px;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+}
+input,textarea {
+    box-sizing: border-box;
+    border: 1px solid black;
+    width: 65%;  
+}
+
+textarea {
+    vertical-align: top;
+    height: 15rem;
+}
+
+.button-submit {
+    text-align: center;
+}
+
+button {
+    color: white;
+    background-color: black;
+    padding: 10px 30px;
+    margin: 30px 0;
+}
+
+/*フッター*/
+#footer {
+    text-align: center;
+    height: 80px;
+    line-height: 80px;
+}
+
+#hamburger {
+    display: none;
+}
+
+/*ハンバーガーメニューの追加css*/
+#hamburger,.menu-content {
+    display: none;
+}
+
+#hamburger.active span:nth-of-type(1) {
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+#hamburger.active span:nth-of-type(2) {
+    opacity: 0;
+}
+
+#hamburger.active span:nth-of-type(3)  {
+    top: 20px;
+    transform: rotate(-45deg);
+}
+
+/*トップへ戻るボタン*/
+#top-btn {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    bottom: 20px;
+    right: 20px;
+}
+
+/*アコーディオン*/
+#menu {
+    font-size: 0;
+    background: #000;
+    text-align: center;
+}
+
+#menu li {
+    color: #fff;
+    background: #000;
+    box-sizing: border-box;
+    cursor: pointer;
+    padding: 0 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#menu li a {
+    text-decoration: none;
+}
+
+#menu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.child {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    left: 0;
+}
+
+
+/*レスポンシブデザイン*/
+
+
+@media screen and (max-width: 768px) {
+
+    /*追加*/
+
+    .menu-content {
+        display: block;
+    }
+
+    .menu-content,.menu-title {
+        margin: 40px 20px;
+        font-size: 2.2rem;
+        color: #333333;
+        text-align: left;
+        font-weight: bold;
+    }
+
+    .menu-content {
+        width: calc(100% - 80px);
+        height: 100%;
+        text-align: center;
+        transition: .2s;
+        position: fixed;
+        top: 0;
+        left: calc(-100% - 80px);
+        background: #fff;
+        color: #333333;
+        box-shadow: 80px 0 rgba(38,98,213,0.3);
+    }
+
+    .menu-content li a {
+        color: #333333;
+        margin: 15px;
+        padding: 5px;
+        border-bottom: 0.5px solid #2662D5;
+        text-decoration: none;
+        display: block;
+    }
+
+    .menu-content li {
+        width: 100%;
+        text-align: left;
+    }
+
+    .menu-content.open {
+        left: 0;
+    }
+
+/*ここまでがJS用追加CSS*/
+
+    #hamburger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        top: 15px;
+        right: 15px;
+        transition: .4s;
+        display: block;
+    }
+
+    #hamburger span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: white;
+        transition: .8s;
+    }
+
+    #hamburger span:nth-of-type(1) {
+        position: absolute;
+        top: 10px;
+        left: 2px;
+    }
+
+    #hamburger span:nth-of-type(2) {
+        position: absolute;
+        top: 20px;
+        left: 2px;
+    }
+
+    #hamburger span:nth-of-type(3) {
+        position: absolute;
+        top: 30px;
+        left: 2px;
+    }
+
+    .business-cat {
+        width: 100%;
+    }
+
+    label {
+        display: block;
+    }
+
+    .form>div {
+        margin: 0 auto;
+    }
+
+    input,textarea {
+        width: 100%;
+    }
+
+    .about-left img {
+        width: 200%;
+    }
+
+    .flex {
+        display: block;
+        text-align: left;
+        margin: 0 auto;
+        justify-content: normal;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+
+    
+}

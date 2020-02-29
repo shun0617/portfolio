@@ -1,0 +1,621 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/*ここからコード
+ヘッダー*/
+
+.target {
+    opacity: 0;
+    transform: translate(0, 200px);
+    transition: all 1s;
+    -webkit-transform: translate(0, 200px);
+    -moz-transform: translate(0, 200px);
+    -ms-transform: translate(0, 200px);
+    -o-transform: translate(0, 200px);
+  }
+
+  .target.scrollIn{
+    opacity : 1;
+    transform : translate(0, 0);
+  }
+
+#header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.header-left,.footer-left {
+    color: white;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+.header-right,.footer-right {
+    padding: 0 30px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0 20px;
+    border: 0;
+    color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+/*メインビジュアル*/
+
+.eyecatch {
+    background: url(img/bg-1.jpg) no-repeat;
+    height: 600px;
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.eyecatch p {
+    color: white;
+    font-size: 60px;
+    font-style: oblique;
+    font-family: sans-serif;   
+}
+
+.machine {
+    padding: 400px 0 0 100px;
+}
+
+.newsbar {
+    background-color: white;
+    width: 50%;
+    height: 50px;
+    text-align: left;
+    margin: 90px 0 0 auto;
+    display: flex;
+}
+
+.news {
+    margin: 0 auto 0 0;
+}
+
+.newsbar p:nth-of-type(1) {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+   
+}
+
+.newsbar p:nth-of-type(2) {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    text-indent: 1em;
+    
+}
+
+.news-button {
+    background-color: black;
+    color: white;
+    height: 50px;
+    width: 15%;
+    border: 1px solid black;
+    cursor: pointer;
+    
+}
+
+/*メインビジュアル2*/
+.eyecatch2 {
+    height: 500px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    z-index: 100;
+}
+
+.eyecatch2 h2 {
+    color: white;
+    width: 50%;
+    text-align: left;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.eyecatch2 p {
+    color: white;
+    width: 60%;
+    line-height: 1.4;
+   
+}
+
+.mission {
+    background-color: white;
+    color: black;
+    margin: 20px 0;
+    width: 10%;
+    height: 35px;
+}
+
+.orange {
+    position: absolute;
+    top: 35%;
+    right: 7%;
+    z-index: 100;
+    width: 40%;
+    height: 370px;
+    z-index: 1;
+}
+
+/*サービス紹介*/
+.service {
+    height: 1500px;
+    background-color: lavender;
+    margin-top: 100px;
+    position: relative;
+}
+
+.section-title {
+    text-align: center;
+    padding: 30px 0;
+    font-size: 30px;
+}
+
+.web {
+    background-color: white;
+    color: black;
+    width: 25%;
+    height: 300px;
+    text-align: left;
+    padding: 50px;
+    margin: auto 0;
+    position: relative;
+    
+}
+
+.service h4 {
+    padding: 15px;
+}
+
+.web p {
+    padding: 15px;
+    line-height: 25px;
+}
+
+.service-button {
+    position: absolute;
+    bottom: 30%;
+    right: 75px;
+    height: 30px;
+    width: 150px;
+}
+
+.camera {
+    width: 50%;
+    height: 500px;
+}
+
+.contents1 {
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    z-index: 300;
+}
+
+.contents2 {
+    position: absolute;
+    top: 65%;
+    left: 45%;
+    z-index: 300;
+}
+
+.first {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    z-index: 100;
+}
+
+.second{
+    position: absolute;
+    top: 55%;
+    left: 0%;
+    z-index: 100;
+}
+
+/*会社概要、採用情報、FAQ*/
+.information {
+    margin-top: 200px;
+    height: 700px;
+}
+
+.info-top {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.company,.recruit {
+    background-size: cover;
+    width: 48%;
+    
+}
+
+.company {
+    background: url(img/bg-4.jpg);
+    height: 300px;
+}
+
+.recruit {
+    background: url(img/bg-5.jpg);
+    height: 300px;
+}
+
+.company p,.recruit p {
+    font-weight: bold;
+    color: white;
+    align-items: center;
+    
+}
+.company p:nth-of-type(1),.recruit p:nth-of-type(1) {
+    font-size: 35px;
+    margin-top: 120px;
+}
+
+.company p:nth-of-type(2),.recruit p:nth-of-type(2) {
+    font-size: 20px;
+    margin-top: 20px;   
+}
+
+.faq {
+    background-color: black;
+    color: white;
+    height: 150px;
+    width: 80%;
+    margin: 100px auto;
+    display: flex;
+   
+}
+
+.faq p:nth-of-type(1) {
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 150px;
+    padding-left: 30px;
+    
+}
+
+.faq p:nth-of-type(2) {
+    line-height: 150px;
+    margin-left: 600px;
+}
+
+.company,.recruit,.faq {
+    cursor: pointer;
+}
+
+/*お問い合わせ*/
+.contact {
+    background: url(img/bg-6.jpg) no-repeat;
+    background-size: cover;
+    height: 600px;
+    color: white;
+    text-align: center;
+}
+
+.last {
+    padding-top: 120px;
+}
+
+.aaa{
+    line-height: 3px;
+    font-size: 20px;
+}
+
+.bbb {
+    line-height: 120px;
+    font-size: 45px;
+}
+
+.ccc {
+    margin-bottom: 40px;
+}
+
+.contact-button {
+    background-color:rgba(0,0,0,0);
+    color: white;
+    border: 1px solid white;
+    height: 35px;
+    width: 140px;
+}
+
+/*フッター*/
+.footer {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+    line-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.small {
+    color: white;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+}
+
+#hamburger {
+    display: none;
+}
+/*レスポンシブデザイン*/
+@media screen and (max-width: 768px) {
+    #hamburger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        top: 15px;
+        right: 15px;
+        transition: .4s;
+        display: block;
+    }
+
+    #hamburger span {
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: white;
+        transition: .8s;
+    }
+
+    #hamburger span:nth-of-type(1) {
+        position: absolute;
+        top: 10px;
+        left: 2px;
+    }
+
+    #hamburger span:nth-of-type(2) {
+        position: absolute;
+        top: 20px;
+        left: 2px;
+    }
+
+    #hamburger span:nth-of-type(3) {
+        position: absolute;
+        top: 30px;
+        left: 2px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .newsbar {
+        width: 100%;
+    }
+
+    .eyecatch2 h2 {
+        margin: 0 auto;
+        width: 70%;
+        top: 20%;
+        left: 20%;
+    }
+
+    .eyecatch2 P {
+        top: 40%;
+        left: 20%;
+        width: 70%;
+        line-height: 1.5;
+    }
+
+    .mission {
+        left: 20%;
+        width: 40%;
+    }
+
+    .service {
+        margin-top: 50px;
+        height: 1300px;
+    }
+
+    .service h4 {
+        padding: 30px 0 20px 30px;
+    }
+
+    .web p {
+        padding: 0 0 10px 30px;
+    }
+
+    .camera {
+        width: 90%;
+        height: 300px;
+    }
+
+    .first {
+        top: 0%;
+        left: 5%;
+        width: 90%;
+    }
+
+    .contents1 {
+        width: 90%;
+        top: 300px;
+        left: 5%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .service-button {
+        bottom: 10%;
+        right: 5%;
+    }
+
+    .second {
+        top: 650px;
+        left: 5%;
+        width: 90%;
+    }
+
+    .contents2 {
+        width: 90%;
+        top: 950px;
+        left: 5%;
+        padding: 0;
+    }
+
+    .information {
+        margin-top: 50px;
+    }
+    .info-top {
+        display: block;
+        justify-content: normal;
+        margin: 0 auto;
+    }
+    .company,.recruit {
+        width: 100%;
+    }
+
+    .faq {
+        margin-top: 350px;
+    }
+
+    .contact {
+        margin-top: 150px;
+    }
+
+    .bbb {
+        line-height: 60px;
+        margin: 30px 0;    
+    }
+
+    .ccc {
+        line-height: 1.5;
+    }
+
+    .footer-left {
+        margin: 0 auto;
+    }
+    .orange {
+        display: none;
+    }
+
+}
