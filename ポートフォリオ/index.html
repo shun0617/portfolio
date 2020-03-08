@@ -12,89 +12,97 @@
 <script src="js/main.js" type="text/javascript"></script>
 
 <body>
-    <!--メインビジュアル-->
+    <!--ヘッダー-->
+    <div class="main-bg">
+        <header>
+            <div id="1" class="header pb3">
+                <div class="header-bar res-none">
+                    <div class="nav-word"><a href="#1"><img class="icon-type1 " src="img/home.png" alt=""><br><p class="invisible one">home</p></a></div>
+                    <div class="nav-word"><a href="#2"><img class="icon-type1" src="img/me.png" alt=""><br><p class="invisible two">profile</p></a></div>
+                    <div class="nav-word"><a href="#3"><img class="icon-type1" src="img/skill.png" alt=""><br><p class="invisible three">skill</p></a></div>
+                    <div class="nav-word"><a href="#4"><img class="icon-type1" src="img/portfolio.png" alt=""><br><p class="invisible four">portfolio</p></a></div>
+                    <div class="nav-word"><a href="#5"><img class="icon-type1" src="img/contact.png" alt=""><br><p class="invisible five">contact</p></a></div>
+                </div>
+            </div>
+        </header>
 
-    
-    <!--トップボタン-->
-    <div id="top-btn">↑</div>
+        <!--トップボタン-->
+        <div id="top-btn">↑</div>
 
-<!--ハンバーガーメニュー-->
-    <div id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <nav class="menu-content">
-        <p class="menu-title">MY PORTFOLIO</p>
-        <ul class="menu-content_inner">
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PROFILE</a></li>
-            <li><a href="#">SKILL</a></li>
-            <li><a href="#">PROTFOLIO</a></li>
-            <li><a href="#">CONTANT</a></li>
-        </ul>
-    </nav>
-    <!--ここまでハンバーガーメニュー-->
-
-    <!--メインビジュアル-->
-    <div id="1" class="top-page">
-        <div class="main-bg">
-            <h2 class="catch-copy1">First Name<br>Second Name</h2>
-            <h2 class="catch-copy2"> LP制作致します</h2>
-            <h2 class="catch-copy3">FUKUOKA JAPAN</h2>
+    <!--ハンバーガーメニュー-->
+        <div id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
 
-    </div>
-    <header>
-        <div class="header">
+        <nav class="menu-content">
+            <p class="menu-title">MY PORTFOLIO</p>
+            <ul class="menu-content_inner">
+                <li><a href="#1"><img class="icon-type3" src="img/home.png" alt="">HOME</a></li>
+                <li><a href="#2"><img class="icon-type3" src="img/me.png" alt="">PROFILE</a></li>
+                <li><a href="#3"><img class="icon-type3" src="img/skill.png" alt="">SKILL</a></li>
+                <li><a href="#4"><img class="icon-type3" src="img/portfolio.png" alt="">PROTFOLIO</a></li>
+                <li><a href="#5"><img class="icon-type3" src="img/contact.png" alt="">CONTACT</a></li>
+            </ul>
+        </nav>
 
-            <div class="header-bar res-none">
-                <a href="#1"><img class="icon-type1" src="img/home.png" alt=""></a>
-                <a href="#2"><img class="icon-type1" src="img/me.png" alt=""></a>
-                <a href="#3"><img class="icon-type1" src="img/skill.png" alt=""></a>
-                <a href="#4"><img class="icon-type1" src="img/portfolio.png" alt=""></a>
-                <a href="#5"><img class="icon-type1" src="img/contact.png" alt=""></a>
-            </div>
-            <div class="button-wrapper who">
-                <a href="#2"><button class="scroll" type="button">Who is me?</button></a>
+        <!--ここまでハンバーガーメニュー-->
+
+        <!--メインビジュアル-->
+
+        <div class="top-page">
+            <div class="main-visual">
+                <h2 class="catch-copy1">First Name<br>Family Name</h2>
+                <h2 class="catch-copy2"> LP制作いたします</h2>
+                <h2 class="catch-copy3">FUKUOKA JAPAN</h2>
             </div>
         </div>
-    </header>
+    </div>
 
     <main>
-        <!--プロファイル-->
-        <div id="2" class="container color-type2 h">
+
+        <!--プロフィール-->
+
+        <div id="2" class="container color1 pb3">
             <div class="profile">
                 <div class="section">
-                    <img class="icon-type2" src="img/me.png" alt="">
-                    <h4 class="title">PROFILE</h4>
+                    <h4 class="title underl-y">PROFILE</h4>
                 </div>
                 <div class="profile-contents">
                     <div class="my-image">
-                        <img class="me b" src="img/me2.png" alt="">
+                        <img class="me b" src="img/me3.jpg" alt="">
                     </div>
                     <div class="text">
-                        <p>ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                        <p>ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                        <p>ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                        <p>ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
-                        <p>ダミーテキストダミーテキストダミーテキストダミーテキスト</p>
+                        <h6 class="mb3 tac">About Me.</h6>
+                        <p>閲覧いただきましてありがとうございます。
+                            <br>Webエンジニアのミドル と申します。よろしくお願いいたします。 </p>
+
+                        <p>平成5年6月17日生まれの26歳、出身地は福岡です。</p>
+
+                        <p>趣味はアニメを見たり、据え置き型のゲームが大好きです。
+                            最近では、とある科学の超電磁砲３期を観ています。</p>
+
+                        <p>プログラミングで人生を変えるために、
+                            今後の社会で通用するスキルを身に着けたいと考えております。</p>
+                            <p>現在、未経験からWebエンジニアを目指し、Coach Techスクールにて
+                            「HTML&CSS」「JS&JQ」「commandline,github」「Vue.js」「Firebase」
+                            「Node.js」「Express」「MongoDB」「Heroku」の学習を行っております。</p>  
+
+                        <p>私にできることは、LP制作とアプリ開発でございます。</p>
+
+                        <p>進捗管理、またそれに関する相談・連絡は密に行います。</p>    
                     </div>
-                </div>
-                <div class="button-wrapper">
-                    <a href="#3"><button class="scroll skill-bt" type="button">SKILL</button></a>
                 </div>
             </div>
         </div>
 
         <!--スキル-->
 
-        <div id="3" class="container color-type1 h">
+        <div id="3" class="container color-type1 pb3">
             <div class="skill">
                 <div class="section">
-                    <img class="icon-type2" src="img/skill.png" alt="">
-                    <h4 class="title">SKILL</h4>
+                    <h4 class="title underl-g">SKILL</h4>
                 </div>
                 <div class="coding flex">
                     <div class="detail">
@@ -136,54 +144,53 @@
                         <p>skill:★☆☆☆☆</p>
                     </div>
                 </div>
-                <div class="button-wrapper">
-                    <a href="#4"><button class="scroll" type="button">PORTFOLIO</button></a>
-                </div>
             </div>
         </div>
 
         <!--ポートフォリオ-->
 
-        <div id="4" class="container color-type2">
+        <div id="4" class="container y">
             <div class="portfolio">
                 <div class="section">
-                    <img class="icon-type2" src="img/portfolio.png" alt="">
-                    <h4 class="title">PORTFOLIO</h4>
+                    <h4 class="title underl-y2">PORTFOLIO</h4>
                 </div>
-                <h4 class="about">コーディング</h4>
-                <div class="lp flex mb8">
+                <h4 class="about">～コーディング～</h4>
+                <div class="lp mb8">
                     <div class="work">
-                        <a href="#"><img class="sample-lp mb3" src="img/lp.jpg" alt=""></a>
-                        <p>LP制作模写①</p>
-                        <p class="mb3">ダミーテキスト</p>
+                        <a href="img/lp1_full.jpg"><img class="sample-lp mb3" src="img/lp1.png" alt=""></a>
+                        <p>LP制作模写「estra」</p>
+                        <p class="mt3 mb3">HTML&CSSによるコーディング</p>
                     </div>
                     <div class="work">
-                        <a href="#"><img class="sample-lp mb3" src="img/lp.jpg" alt=""></a>
-                        <p>LP制作模写②</p>
-                        <p class="mb3">ダミーテキスト</p>
+                        <a href="img/lp2_full.jpg"><img class="sample-lp mb3" src="img/lp2.png" alt=""></a>
+                        <p>LP制作模写「estra2」</p>
+                        <p class="mt3 mb3">HTML&CSS,JS&JQによるコーディング
+                            <br>スクロールによるフェードイン機能、ハンバーガーメニューを実装した模写
+                        </p>
                     </div>
                     <div class="work">
-                        <a href="#"><img class="sample-lp mb3" src="img/lp.jpg" alt=""></a>
-                        <p>LP制作模写③</p>
-                        <p class="mb3">ダミーテキスト</p>
+                        <a href="img/lp3_full.png"><img class="sample-lp mb3" src="img/lp3.png" alt=""></a>
+                        <p>LP制作模写「write」</p>
+                        <p class="mt3 mb3">HTML&CSS,JS&JQによるコーディング
+                            <br>トップボタン、スムーススクロールを実装した模写</p>
                     </div>
                 </div>
-                <h4 class="about">デザイン</h4>
-                <div class="design flex pb8">
+                <h4 class="about">～デザイン～</h4>
+                <div class="design pb8">
                     <div class="work">
-                        <img class="sample-design mb3" src="img/design.png" alt="">
-                        <p>デザインサンプル①</p>
-                        <p>ダミーテキスト</p>
+                        <a href="img/design1.png"><img class="sample-design mb3" src="img/design1.png" alt=""></a>
+                        <p>デザインサンプル Illstrator</p>
+                        <p class="mt3">膨張によるクローバー作成</p>
                     </div>
                     <div class="work">
-                        <img class="sample-design mb3" src="img/design.png" alt="">
-                        <p>デザインサンプル②</p>
-                        <p>ダミーテキスト</p>
+                        <a href="#"><img class="sample-design mb3" src="img/design1.png" alt=""></a>
+                        <p>デザインサンプル Photoshop</p>
+                        <p class="mt3">ダミーテキスト</p>
                     </div>
                     <div class="work">
-                        <img class="sample-design mb3" src="img/design.png" alt="">
-                        <p>デザインサンプル③</p>
-                        <p>ダミーテキスト</p>
+                        <a href="img/design3.png"><img class="sample-design mb3" src="img/design3.png" alt=""></a>
+                        <p>デザインサンプル XD</p>
+                        <p class="mt3">スマホサイズのプロトタイプを作成</p>
                     </div>
                 </div>
             </div>
@@ -194,7 +201,7 @@
             <div class="contact flex">
                 <div class="name mb8">
                     <p class="">First Name</p>
-                    <p>Second Name</p>
+                    <p>Family Name</p>
                 </div>
                 <div class="contact-me mb8">
                     <p class=" mb3">CONTACT ME</p>
@@ -208,19 +215,19 @@
                 </div>
                 <div class="social">
                     <p class=" mb3">SOCIAL</p>
-                    <a href="#"><img class="sns" src="img/twitter.png" alt=""></a>
+                    <a href="https://twitter.com/midoru_engineer">
+                        <img class="sns" src="img/twitter.png" alt=""></a>
                 </div>
             </div>
         </div>
 
-    </main>
+        <footer>
+            <div class="footer pb3">
+                <p>@ダミーテキスト</p>
+            </div>
+        </footer>
 
-    <!--スモール文-->
-    <small>
-        <div class="small">
-            <p>ダミーテキスト</p>
-        </div>
-    </small>
+    </main>
 
 </body>
 
