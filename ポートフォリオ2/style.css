@@ -346,6 +346,10 @@ input, select {
     height: 150px;
     padding: 25px 75px;
 }
+.twwiter {
+    width: 300px;
+    padding: 25px 0;
+}
 
 
 /*コンタクト*/
